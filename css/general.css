@@ -1,0 +1,229 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+footer {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* KATEGORIER */
+.category_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category_card {
+  background: #eee;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category_card:hover {
+  background: #ddd;
+}
+
+/* PRODUKTLISTE */
+.product_list_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product_card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product_card img {
+  width: 100%;
+  height: auto;
+}
+
+.price {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.old_price {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.discount {
+  color: red;
+}
+
+/* Udsolgt styling */
+.udsolgt {
+  opacity: 0.6;
+}
+
+.sold_out_label {
+  background: red;
+  color: white;
+  padding: 0.3rem;
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+.button {
+  background: black;
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #333;
+}
+
+.disabled {
+  background: grey;
+  pointer-events: none;
+}
+
+/* PRODUKTDETALJE */
+.product_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.product_image img {
+  width: 100%;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* RESPONSIV */
+@media (max-width: 768px) {
+  .product_container {
+    grid-template-columns: 1fr;
+  }
+  .main_header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main_nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+/* HEADER & NAVIGATION */
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #111;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.main_nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.main_nav a:hover {
+  color: #aaa;
+}
+
+/* FOOTER */
+.main_footer {
+  background: #111;
+  color: white;
+  margin-top: 3rem;
+}
+
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.footer_column h4 {
+  margin-bottom: 1rem;
+}
+
+.footer_column ul {
+  list-style: none;
+}
+
+.footer_column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer_column a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer_column a:hover {
+  color: white;
+}
+
+.footer_bottom {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
