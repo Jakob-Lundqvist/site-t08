@@ -108,7 +108,17 @@ main {
   margin-top: 0.5rem;
   cursor: pointer;
 }
-
+.button-product {
+  background: black;
+  color: white;
+  padding: 0.7rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  width: 200px;
+}
 .button:hover {
   background: #333;
 }
