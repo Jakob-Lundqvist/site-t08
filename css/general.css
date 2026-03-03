@@ -38,9 +38,11 @@ main {
   font-weight: bold;
   transition: 0.3s;
   font-size: 1.3em;
+  border-radius: 15px;
 }
 .category_card:hover {
   background: #ddd;
+  scale: 110%;
 } /* PRODUKTLISTE */
 .product_list_container {
   display: grid;
@@ -101,8 +103,10 @@ main {
   cursor: pointer;
   width: 200px;
 }
-.button,
 .button-product:hover {
+  background: #333;
+}
+.button:hover {
   background: #333;
 }
 .disabled {
@@ -202,4 +206,8 @@ main {
   color: red;
   display: inline-block;
   transform: scaleX(-1);
+}
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
 }
