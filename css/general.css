@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* RESET */
 * {
   margin: 0;
@@ -8,6 +10,19 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
 }
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+nav,
+a {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+footer {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
 header,
 footer {
   background: #111;
@@ -210,4 +225,60 @@ main {
 h2 {
   font-size: 1.8em;
   font-weight: bold;
+}
+.product-slider {
+  overflow: hidden;
+  padding: 2rem 0;
+  background: #f5f5f5;
+}
+
+.slider-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scrollSlider 25s linear infinite;
+}
+
+.slider-track img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.slider-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Automatisk scroll */
+@keyframes scrollSlider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.slider-item {
+  display: block;
+}
+a {
+  font-weight: 500;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+a,
+.button-product {
+  font-weight: 700;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.category_card {
+  background: white;
+  border: 2px solid #eee;
+}
+
+.category_card:hover {
+  border: 2px solid var(--accent);
+  transform: translateY(-4px);
 }
