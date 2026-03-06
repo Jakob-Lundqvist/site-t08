@@ -282,3 +282,13 @@ a,
   border: 2px solid var(--accent);
   transform: translateY(-4px);
 }
+.back {
+  cursor: pointer;
+  padding: 0.7rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.back:hover {
+  background-color: white;
+  color: black;
+}
